@@ -23,7 +23,7 @@ module.exports = function(grunt) {
              style: 'expanded'
           },
           files: {
-            'css/style.css': 'css/*.scss',
+            'assets/css/style.css': 'assets/css/*.scss',
           }
         }
       },
@@ -36,11 +36,11 @@ module.exports = function(grunt) {
           livereload: true, // Activons le livereload du navigateur
         },
         src: {
-          files: ['js/*.js', 'css/*.css', '**/*.html'], // Les fichiers à observer…
+          files: ['assets/js/*.js', 'assets/css/*.css', 'template/*.html'], // Les fichiers à observer…
           tasks: [], // … la tache à effectué NON UTILISE POUR l'INSTANT
         },
         css: {
-          files: 'css/*.scss',
+          files: 'assets/css/*.scss',
           tasks: ['sass'],
           options: {
           livereload: true,
@@ -54,8 +54,10 @@ module.exports = function(grunt) {
             options:{
                 port:3000,
                 hostname:'localhost',
-                bases:['./'],
+                bases:['./template'],
+/*
                 livereload:true
+*/
             }
         }
       }
