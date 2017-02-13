@@ -1,3 +1,8 @@
-
+/* line 5, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+#bgImage {
+  background-color: #1a1a1a;
+  background-image: url(../img/trame_footer.png);
+  border-top: 1.5vh solid #fc9633;
+  color: grey; }
 
 /*# sourceMappingURL=style.css.map */
