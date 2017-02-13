@@ -1,8 +1,37 @@
-/* line 5, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 11, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 #bgImage {
   background-color: #1a1a1a;
   background-image: url(../img/trame_footer.png);
-  border-top: 1.5vh solid #fc9633;
-  color: grey; }
+  border-top: 1.5vh solid #fc9633; }
+
+/* line 18, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+footer {
+  padding-top: 2vh;
+  font-family: Quicksand;
+  color: #ffffff; }
+  /* line 29, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .caemSection .caemInfos {
+    display: flex;
+    align-items: center; }
+  /* line 36, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .caemSection .socialNetwork {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+  /* line 44, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer nav {
+    padding: 3vh 0vh 1vh 0vh;
+    border-bottom: 1px solid #999999; }
+    /* line 49, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    footer nav ul {
+      /*display: flex;
+			justify-content: space-around;*/ }
+    /* line 60, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    footer nav a {
+      color: #999999; }
+  /* line 66, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .banner div {
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

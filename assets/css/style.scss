@@ -1,16 +1,71 @@
 $caemUIDark: #1a1a1a;
-$caemUIGrey: #333333;
+$caemUIGrey: #999999;
 $caemOrange: #fc9633;
 $caemBlue: #35a1e6;
 $caemPink: #e83377;
 $caemGreen: #4dd433;
 $caemAlert: #db0010;
-
+$caemWhite: #ffffff;
 
 
 #bgImage{
-	background-color: $caemDark;
+	background-color: $caemUIDark;
 	background-image: url(../img/trame_footer.png);
 	border-top: 1.5vh solid $caemOrange;
-	color: grey;
+}
+
+
+footer
+{
+
+	padding-top: 2vh;
+	font-family: Quicksand;
+	color: $caemWhite;
+
+
+	.caemSection
+	{
+
+		.caemInfos
+		{
+			display: flex;
+			align-items: center;
+		}
+
+
+		.socialNetwork
+		{
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+	}
+
+	nav
+	{
+		padding: 3vh 0vh 1vh 0vh;
+		border-bottom: 1px solid $caemUIGrey;
+
+		ul
+		{
+			/*display: flex;
+			justify-content: space-around;*/
+		}
+
+		li
+		{
+
+		}
+
+		a
+		{
+			color: $caemUIGrey;
+		}
+	}
+
+	.banner div
+	{
+		display: flex;
+		justify-content: center;
+	}
 }
