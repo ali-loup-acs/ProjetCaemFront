@@ -1,0 +1,16 @@
+$caemUIDark: #1a1a1a;
+$caemUIGrey: #333333;
+$caemOrange: #fc9633;
+$caemBlue: #35a1e6;
+$caemPink: #e83377;
+$caemGreen: #4dd433;
+$caemAlert: #db0010;
+
+
+
+#bgImage{
+	background-color: $caemDark;
+	background-image: url(../img/trame_footer.png);
+	border-top: 1.5vh solid $caemOrange;
+	color: grey;
+}
