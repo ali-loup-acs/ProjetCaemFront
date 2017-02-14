@@ -1,18 +1,64 @@
-$caemUIDark: #1a1a1a;
-$caemUIGrey: #333333;
-$caemOrange: #fc9633;
-$caemBlue: #35a1e6;
-$caemPink: #e83377;
-$caemGreen: #4dd433;
-$caemAlert: #db0010;
-
+@import 'varstyle';
 
 
 #bgImage{
 	background-color: $caemUIDark;
 	background-image: url(../img/trame_footer.png);
 	border-top: 1.5vh solid $caemOrange;
-	color: grey;
+}
+
+
+.footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
+
+
+footer
+{
+	@extend .footerFont;
+
+	padding-top: 2vh;
+
+	.caemSection
+	{
+		address
+		{
+			padding-top: 4vh;
+
+			.caemInfos
+			{
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		.socialNetwork
+		{
+			font-size: 1.1em;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			padding-top: 4vh;
+		}
+	}
+
+
+
+	nav
+	{
+		padding: 3vh 0vh 1vh 0vh;
+		border-bottom: 1px solid $caemWhite;
+		opacity: 0.5;
+
+		a
+		{
+			@extend .footerFont;
+		}
+	}
+
+	.banner div
+	{
+		display: flex;
+		justify-content: center;
+	}
 }
 body{
 	font-family: QuickSand;
