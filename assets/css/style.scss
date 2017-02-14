@@ -15,7 +15,7 @@ main{
 
 	header{
 
-		 	h2{
+		h2{
 			font-weight: bold;
 		}
 
@@ -83,13 +83,56 @@ main{
 
 
 
+.mainParcoursMusical{
+
+	aside
+	{
+		margin: 0;
+		padding: 1vh;
+		border: 1px solid red;
+		height: 200vh;
+
+		label
+		{
+			background-color: #f2f2f2;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1vh 0vh 1vh 0vh;
+
+			*
+			{
+				margin:0;
+				padding:0;
+			}
+
+			p
+			{
+				margin-left: 1vw;
+			}
+
+			input
+			{
+				margin-right: 1vw;
+			}
+		}
+	}
+
+	section
+	{
+		margin: 0;
+		padding: 0;
+		border: 1px solid blue;
+		height: 200vh;
+	}
+}
+
 
 #bgImage{
 	background-color: $headerFooterMainColor;
 	background-image: url(../img/trame_footer.png);
 	border-top: 1.5vh solid $headerFooterBorderColor;
 }
-
 
 footer
 {

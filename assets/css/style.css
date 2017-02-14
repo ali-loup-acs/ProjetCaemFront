@@ -1,6 +1,8 @@
 /*=================*/
 /*COLOR VARIABLES :*/
 /*=================*/
+/*currently background color for footer / header*/
+/*color of the font on the header / footer for some elements*/
 /*=================*/
 /*FONTS VARIABLES :*/
 /*=================*/
@@ -10,6 +12,8 @@
 /*=================*/
 /*COLOR VARIABLES :*/
 /*=================*/
+/*currently background color for footer / header*/
+/*color of the font on the header / footer for some elements*/
 /*=================*/
 /*FONTS VARIABLES :*/
 /*=================*/
@@ -88,50 +92,81 @@ main section {
 .orange {
   border-left: #fc9633 solid 0.65rem; }
 
-/* line 87, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 88, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.mainParcoursMusical aside {
+  margin: 0;
+  padding: 1vh;
+  border: 1px solid red;
+  height: 200vh; }
+  /* line 95, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  .mainParcoursMusical aside label {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0vh 1vh 0vh; }
+    /* line 103, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    .mainParcoursMusical aside label * {
+      margin: 0;
+      padding: 0; }
+    /* line 109, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    .mainParcoursMusical aside label p {
+      margin-left: 1vw; }
+    /* line 114, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    .mainParcoursMusical aside label input {
+      margin-right: 1vw; }
+
+/* line 121, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.mainParcoursMusical section {
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
+  height: 200vh; }
+
+/* line 131, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 #bgImage {
   background-color: #1a1a1a;
   background-image: url(../img/trame_footer.png);
   border-top: 1.5vh solid #fc9633; }
 
-/* line 94, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 137, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 footer {
   padding-top: 2vh; }
-  /* line 102, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 145, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .caemSection address {
     padding-top: 4vh; }
-    /* line 106, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 149, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     footer .caemSection address .caemInfos {
       padding: 0;
       margin: 0;
       display: flex;
       align-items: center; }
-  /* line 115, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 158, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .caemSection .socialNetwork {
     font-size: 1.1em;
     display: flex;
     flex-flow: column;
     align-items: center;
     padding-top: 4vh; }
-  /* line 127, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 170, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav {
     border-bottom: 1px solid #ffffff;
     padding: 5vh 0vh 2vh 0vh;
     opacity: 0.5; }
-    /* line 138, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 181, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     footer nav a:hover {
       color: #ffffff; }
-  /* line 144, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 187, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .banner div {
     padding: 2vh 0vh 2vh 0vh;
     display: flex;
     justify-content: center; }
 
 @media screen and (max-width: 768px) {
-  /* line 152, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 195, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav li {
     padding-bottom: 3vh; }
-  /* line 152, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 195, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav {
     padding: 8vh 0vh 5vh 0vh; } }
 
