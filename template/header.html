@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAEM Besançon École de musique - Accueil</title>
+    <meta name="description" content="École de musique à Besançon" />
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+      <header>
+        <div class="container-fluid">
+          <div class="row" id="contact-connection">
+            <div id="logo-desktop" class="col-md-11">Suivez-nous sur <a href="#"><img src="../assets/img/facebook_logo.svg"></img></a> <a href="#"><img src="../assets/img/twitter_logo.svg"></img></a> <a href="#"><img src="../assets/img/youtube_logo.svg"></img></a> ou <a href="#">contactez-nous</a> directement.
+            </div>
+            <div id="logo-mobile" class="col-md-11"><a href="#"><img src="../assets/img/facebook_logo.svg"></img></a> <a href="#"><img src="../assets/img/twitter_logo.svg"></img></a> <a href="#"><img src="../assets/img/youtube_logo.svg"></img></a></div>
+            <div  class="col-md-1">
+              <a id="connection" href="#">Connexion</a>
+            </div>
+          </div>
+          <div class="row" id=header>
+            <img src="../assets/img/logo_CAEM.svg" alt="logo">
+          </div>
+        </div>
+        <nav>
+          <ul class="menu" id="myMenu">
+              <li class="home"><a href="#">Accueil</a></li>
+              <li class="icon">
+                  <a href="javascript:void(0);" onclick="myBurger()">&#9776;</a>
+              </li>
+              <li><a href="#">Mon parcours musical</a></li>
+              <li><a href="#">Tarifs & Inscriptions</a></li>
+              <li><a href="#">Évenements</a></li>
+              <li><a href="#">L'équipe</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <script src="//localhost:35729/livereload.js"></script>
+  </body>
+
+  <script>
+        function myBurger() {
+            var x = document.getElementById("myMenu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+  </script>
+</html>
