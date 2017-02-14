@@ -1,0 +1,13 @@
+//TO EASILY CHANGE THE STYLE OF THE WEBSITE, GO TO _configstyle.scss FILE
+@import 'configstyle';
+
+//FONTS MIXINS :
+
+//This mixin is used in the SCSS file in order to change the type of an element easily
+@mixin font($fontType, $fontWeight, $fontSize, $fontColor)
+	{
+		font-family: $fontType;
+		font-weight: $fontWeight;
+		font-size: $fontSize;
+		color: $fontColor;
+	}

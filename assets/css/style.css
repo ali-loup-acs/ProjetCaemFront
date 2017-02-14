@@ -1,11 +1,143 @@
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand";
-}
+/*=================*/
+/*COLOR VARIABLES :*/
+/*=================*/
+/*=================*/
+/*FONTS VARIABLES :*/
+/*=================*/
+/*Quicksand available*/
+/*300, 400 or 700 availables*/
+/*check for global colors above or create your own*/
+/*=================*/
+/*COLOR VARIABLES :*/
+/*=================*/
+/*=================*/
+/*FONTS VARIABLES :*/
+/*=================*/
+/*Quicksand available*/
+/*300, 400 or 700 availables*/
+/*check for global colors above or create your own*/
+/* line 7, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.footerFont, footer, footer nav a {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #ffffff; }
+
+/* line 10, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+body {
+  font-family: QuickSand; }
+
+/* line 18, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+main header h2 {
+  font-weight: bold; }
+
+/* line 22, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+main header p {
+  padding-left: 0.7em;
+  line-height: 1.75em;
+  font-size: 2em; }
+
+/* line 28, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+main header a {
+  display: inline-block;
+  color: white;
+  background-color: #35a1e6;
+  font-size: 2.6rem;
+  padding: 1rem 2.3rem;
+  letter-spacing: 0.2rem; }
+
+/* line 36, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+main header a::after {
+  content: "\25B8";
+  padding-left: 3.3rem; }
+
+/* line 42, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+main section {
+  margin: 2em 0; }
+  /* line 45, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  main section header {
+    background-color: #fc9633;
+    color: white;
+    font-weight: bold; }
+  /* line 51, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  main section article {
+    margin: 1.7em 0;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.3);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.3);
+    box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.1); }
+    /* line 58, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    main section article figure figcaption {
+      background-image: url("../img/trame_footer.png"); }
+      /* line 61, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+      main section article figure figcaption h2 {
+        font-weight: bold; }
+
+/* line 70, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.blue {
+  border-left: #35a1e6 solid 0.65rem; }
+
+/* line 73, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.green {
+  border-left: #4dd433 solid 0.65rem; }
+
+/* line 76, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.pink {
+  border-left: #e83377 solid 0.65rem; }
+
+/* line 79, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.orange {
+  border-left: #fc9633 solid 0.65rem; }
+
+/* line 87, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+#bgImage {
+  background-color: #1a1a1a;
+  background-image: url(../img/trame_footer.png);
+  border-top: 1.5vh solid #fc9633; }
+
+/* line 94, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+footer {
+  padding-top: 2vh; }
+  /* line 102, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .caemSection address {
+    padding-top: 4vh; }
+    /* line 106, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    footer .caemSection address .caemInfos {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center; }
+  /* line 115, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .caemSection .socialNetwork {
+    font-size: 1.1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 4vh; }
+  /* line 127, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer nav {
+    border-bottom: 1px solid #ffffff;
+    padding: 5vh 0vh 2vh 0vh;
+    opacity: 0.5; }
+    /* line 138, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    footer nav a:hover {
+      color: #ffffff; }
+  /* line 144, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .banner div {
+    padding: 2vh 0vh 2vh 0vh;
+    display: flex;
+    justify-content: center; }
+
+@media screen and (max-width: 768px) {
+  /* line 152, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer nav li {
+    padding-bottom: 3vh; }
+  /* line 152, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer nav {
+    padding: 8vh 0vh 5vh 0vh; } }
 
 
         /* ---------------- HEADER ---------------- */
