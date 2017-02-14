@@ -1,0 +1,99 @@
+#bgImage {
+  background-color: #1a1a1a;
+  background-image: url(../img/trame_footer.png);
+  border-top: 1.5vh solid #fc9633;
+}
+
+.footerFont, footer, footer nav a {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+footer {
+  padding-top: 2vh;
+}
+footer .caemSection address {
+  padding-top: 4vh;
+}
+footer .caemSection address .caemInfos {
+  display: flex;
+  align-items: center;
+}
+footer .caemSection .socialNetwork {
+  font-size: 1.1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 4vh;
+}
+footer nav {
+  padding: 3vh 0vh 1vh 0vh;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.5;
+}
+footer .banner div {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: QuickSand;
+}
+
+main header h2 {
+  font-weight: bold;
+}
+main header p {
+  padding-left: 0.7em;
+  line-height: 1.75em;
+  font-size: 2em;
+}
+main header a {
+  display: inline-block;
+  color: white;
+  background-color: #35a1e6;
+  font-size: 2.6rem;
+  padding: 1rem 2.3rem;
+  letter-spacing: 0.2rem;
+}
+main header a::after {
+  content: "\25B8";
+  padding-left: 3.3rem;
+}
+main section {
+  margin: 2em 0;
+}
+main section header {
+  background-color: #fc9633;
+  color: white;
+  font-weight: bold;
+}
+main section article {
+  margin: 1.7em 0;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.3);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.1);
+}
+main section article figure figcaption {
+  background-image: url("../img/trame_footer.png");
+}
+
+.blue {
+  border-left: #35a1e6 solid 0.65rem;
+}
+
+.green {
+  border-left: #4dd433 solid 0.65rem;
+}
+
+.pink {
+  border-left: #e83377 solid 0.65rem;
+}
+
+.orange {
+  border-left: #fc9633 solid 0.65rem;
+}
+
+/*# sourceMappingURL=style.css.map */
