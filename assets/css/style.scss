@@ -1,68 +1,9 @@
 @import 'varstyle';
 
-
-#bgImage{
-	background-color: $caemUIDark;
-	background-image: url(../img/trame_footer.png);
-	border-top: 1.5vh solid $caemOrange;
-}
-
-
-.footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
-
-
-footer
-{
-	@extend .footerFont;
-
-	padding-top: 2vh;
-
-	.caemSection
-	{
-		address
-		{
-			padding-top: 4vh;
-
-			.caemInfos
-			{
-				display: flex;
-				align-items: center;
-			}
-		}
-
-		.socialNetwork
-		{
-			font-size: 1.1em;
-			display: flex;
-			flex-flow: column;
-			align-items: center;
-			padding-top: 4vh;
-		}
-	}
-
-
-
-	nav
-	{
-		padding: 3vh 0vh 1vh 0vh;
-		border-bottom: 1px solid $caemWhite;
-		opacity: 0.5;
-
-		a
-		{
-			@extend .footerFont;
-		}
-	}
-
-	.banner div
-	{
-		display: flex;
-		justify-content: center;
-	}
-}
 body{
 	font-family: QuickSand;
 }
+
 main{
 
 	header{
@@ -131,3 +72,78 @@ main{
 .orange{
 	border-left: $caemOrange solid 0.65rem;
 }
+
+
+
+
+
+#bgImage{
+	background-color: $caemUIDark;
+	background-image: url(../img/trame_footer.png);
+	border-top: 1.5vh solid $caemOrange;
+}
+
+.footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
+
+footer
+{
+	@extend .footerFont;
+
+	padding-top: 2vh;
+
+	.caemSection
+	{
+		address
+		{
+			padding-top: 4vh;
+
+			.caemInfos
+			{
+				padding: 0;
+				margin: 0;
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		.socialNetwork
+		{
+			font-size: 1.1em;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			padding-top: 4vh;
+		}
+	}
+
+
+
+	nav
+	{
+		border-bottom: 1px solid $caemWhite;
+		padding: 5vh 0vh 2vh 0vh;
+		opacity: 0.5;
+
+		a
+		{
+			@extend .footerFont;
+		}
+
+		a:hover
+		{
+			color: $caemWhite;
+		}
+	}
+
+	.banner div
+	{
+		padding: 2vh 0vh 2vh 0vh;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 768px){footer nav li{padding-bottom: 3vh;} footer nav{padding: 8vh 0vh 5vh 0vh;}}
+
+
+
