@@ -1,11 +1,4 @@
-$caemUIDark: #1a1a1a;
-$caemUIGrey: #999999;
-$caemOrange: #fc9633;
-$caemBlue: #35a1e6;
-$caemPink: #e83377;
-$caemGreen: #4dd433;
-$caemAlert: #db0010;
-$caemWhite: #ffffff;
+@import 'varstyle';
 
 
 #bgImage{
@@ -15,51 +8,49 @@ $caemWhite: #ffffff;
 }
 
 
+.footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
+
+
 footer
 {
+	@extend .footerFont;
 
 	padding-top: 2vh;
-	font-family: Quicksand;
-	color: $caemWhite;
-
 
 	.caemSection
 	{
-
-		.caemInfos
+		address
 		{
-			display: flex;
-			align-items: center;
-		}
+			padding-top: 4vh;
 
+			.caemInfos
+			{
+				display: flex;
+				align-items: center;
+			}
+		}
 
 		.socialNetwork
 		{
+			font-size: 1.1em;
 			display: flex;
 			flex-flow: column;
 			align-items: center;
+			padding-top: 4vh;
 		}
 	}
+
+
 
 	nav
 	{
 		padding: 3vh 0vh 1vh 0vh;
-		border-bottom: 1px solid $caemUIGrey;
-
-		ul
-		{
-			/*display: flex;
-			justify-content: space-around;*/
-		}
-
-		li
-		{
-
-		}
+		border-bottom: 1px solid $caemWhite;
+		opacity: 0.5;
 
 		a
 		{
-			color: $caemUIGrey;
+			@extend .footerFont;
 		}
 	}
 

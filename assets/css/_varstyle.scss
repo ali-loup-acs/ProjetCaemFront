@@ -1,0 +1,27 @@
+//COLOR VARIABLES FOR THE WHOLE WEBSITE :
+
+$caemUIDark: #1a1a1a;
+$caemUIGrey: #999999;
+$caemOrange: #fc9633;
+$caemBlue: #35a1e6;
+$caemPink: #e83377;
+$caemGreen: #4dd433;
+$caemAlert: #db0010;
+$caemWhite: #ffffff;
+
+
+//FONTS VARIABLES :
+
+
+@mixin font($fontType, $fontWeight, $fontSize, $fontColor){
+	font-family: $fontType;
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	color: $fontColor;
+}
+
+
+$footerFontType: Quicksand;
+$footerFontWeight: 400;
+$footerFontSize: 1.1em;
+$footerFontColor: $caemWhite;

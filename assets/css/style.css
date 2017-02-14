@@ -1,35 +1,39 @@
-/* line 11, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 4, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 #bgImage {
   background-color: #1a1a1a;
   background-image: url(../img/trame_footer.png);
   border-top: 1.5vh solid #fc9633; }
 
-/* line 18, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
-footer {
-  padding-top: 2vh;
+/* line 11, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.footerFont, footer, footer nav a {
   font-family: Quicksand;
+  font-weight: 400;
+  font-size: 1.1em;
   color: #ffffff; }
-  /* line 29, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
-  footer .caemSection .caemInfos {
-    display: flex;
-    align-items: center; }
-  /* line 36, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+
+/* line 14, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+footer {
+  padding-top: 2vh; }
+  /* line 22, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  footer .caemSection address {
+    padding-top: 4vh; }
+    /* line 26, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    footer .caemSection address .caemInfos {
+      display: flex;
+      align-items: center; }
+  /* line 33, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .caemSection .socialNetwork {
+    font-size: 1.1em;
     display: flex;
     flex-flow: column;
-    align-items: center; }
-  /* line 44, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    align-items: center;
+    padding-top: 4vh; }
+  /* line 45, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav {
     padding: 3vh 0vh 1vh 0vh;
-    border-bottom: 1px solid #999999; }
-    /* line 49, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
-    footer nav ul {
-      /*display: flex;
-			justify-content: space-around;*/ }
-    /* line 60, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
-    footer nav a {
-      color: #999999; }
-  /* line 66, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.5; }
+  /* line 57, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .banner div {
     display: flex;
     justify-content: center; }
