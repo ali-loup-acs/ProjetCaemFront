@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+/*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 /*=================*/
 /*COLOR VARIABLES :*/
 /*=================*/
@@ -135,4 +139,296 @@ footer {
   footer nav {
     padding: 8vh 0vh 5vh 0vh; } }
 
-/*# sourceMappingURL=style.css.map */
+
+        /* ---------------- HEADER ---------------- */
+
+#contact-connection{
+  background-color: #1A1A1A;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-top: #FC9633 solid 1.3vh;
+  font-size: 2.5vh;
+}
+
+
+#contact-connection img{
+  width: 3%;
+  margin: 0.4vw;
+}
+
+#logo-mobile{
+  display: none;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/header.png");
+  background-size: cover;
+}
+
+#header img{
+  width: 330px;
+}
+
+nav{
+  background-color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  border-bottom: #FC9633 solid 1.3vh;
+
+}
+
+nav ul{
+  height: 8vh;
+}
+
+
+nav li{
+  display: inline;
+}
+
+
+li a{
+  height: 9vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  color: white;
+  font-size: 3vh;
+}
+
+li a:hover{
+  background: #333333;
+  text-decoration: none;
+  color: white;
+}
+
+ul.menu li.icon {
+  display: none;
+}
+
+
+        /* ------------ HEADER RESPONSIVE ------------ */
+
+
+@media screen and (max-width: 1800px){
+    li a{
+      height: 9.2vh;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    li a{
+      height: 9vh;
+    }
+}
+
+
+@media screen and (max-width: 1400px){
+    li a{
+      height: 9vh;
+    }
+}
+
+@media screen and (max-device-width: 1400px){
+    li a{
+      height: 9.4vh;
+    }
+}
+
+
+
+
+
+@media screen and (max-device-width: 1024px){
+
+      nav{
+        display: block;
+        border: none;
+      }
+
+      #logo-desktop{
+        display: none;
+      }
+
+      #logo-mobile{
+        display: inline;
+      }
+
+      #logo-mobile img{
+        width: 5vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+
+      #connection{
+        margin-left: -15vw;
+        font-size: 3vh;
+      }
+
+      #header img{
+        width: 250px;
+      }
+
+    .menu li a{
+      font-size: 30px;
+      margin-top: 1vh;
+    }
+
+
+    ul.menu {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 9vh;
+    }
+
+    ul.menu li:not(:first-child) {
+      display: none;
+    }
+
+    ul.menu li.icon {
+      float: right;
+      display: inline-block;
+    }
+
+    .icon a:hover{
+      background: none;
+    }
+
+
+    ul.menu.responsive {
+      position: relative;
+      height: 40vh;
+    }
+
+    ul.menu.responsive li.icon {
+      margin-top: 1vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    ul.menu.responsive li {
+      display: flex;
+      align-items: center;
+      margin-top: 1vh;
+      margin-bottom: -2vh;
+    }
+
+    ul.menu.responsive li a{
+      display: block;
+      text-align: left;
+    }
+
+
+    li a{
+      height: 7vh;
+    }
+}
+
+@media screen and (max-device-width: 800px){
+  ul.menu.responsive li {
+    margin-top: 1.5vh;
+    margin-bottom: -2vh;
+  }
+
+  ul.menu.responsive li.icon {
+    margin-top: 1.5vh;
+  }
+}
+
+
+
+@media screen and (max-device-width: 650px){
+
+  #header img{
+    width: 120px;
+  }
+
+  .menu li a{
+    font-size: 20px;
+    margin-top: 4vh;
+  }
+
+  #logo-mobile img{
+    width: 6vw;
+  }
+
+  #connection{
+    margin-left: 50vw;
+    font-size: 5vh;
+  }
+
+  ul.menu {
+    height: 15vh;
+  }
+
+  ul.menu.responsive {
+    height: 58vh;
+  }
+
+  ul.menu.responsive li {
+    margin-top: -0.5vh;
+    margin-bottom: -0.5vh;
+  }
+
+  ul.menu.responsive li.icon {
+    margin-top: -0.3vh;
+  }
+}
+
+
+@media screen and (max-device-width: 450px){
+
+  #header img{
+    width: 150px;
+  }
+
+  .menu li a{
+    font-size: 20px;
+    margin-top: 0vh;
+  }
+
+  #logo-mobile img{
+    width: 8vw;
+  }
+
+  #connection{
+    margin-left: 20vw;
+    font-size: 3vh;
+  }
+
+  ul.menu {
+    height: 8vh;
+  }
+
+  ul.menu.responsive {
+    height: 35vh;
+  }
+
+  ul.menu.responsive li {
+    margin-top: 1.7vh;
+    margin-bottom: -2vh;
+  }
+
+  ul.menu.responsive li.icon {
+    margin-top: 1.7vh;
+  }
+}
+
+@media screen and (max-device-width: 360px){
+  ul.menu.responsive li {
+    margin-top: 1.3vh;
+    margin-bottom: -2vh;
+  }
+
+  ul.menu.responsive li.icon {
+    margin-top: 1.3vh;
+  }
+}
