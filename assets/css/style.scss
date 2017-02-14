@@ -1,4 +1,11 @@
-@import 'varstyle';
+//TO EASILY CHANGE THE STYLE OF THE WEBSITE, GO TO _configstyle.scss FILE
+@import 'configstyle';
+@import 'mixinstyle';
+
+//EXTENDS:
+
+.footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
+
 
 body{
 	font-family: QuickSand;
@@ -78,12 +85,11 @@ main{
 
 
 #bgImage{
-	background-color: $caemUIDark;
+	background-color: $headerFooterMainColor;
 	background-image: url(../img/trame_footer.png);
-	border-top: 1.5vh solid $caemOrange;
+	border-top: 1.5vh solid $headerFooterBorderColor;
 }
 
-.footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
 
 footer
 {

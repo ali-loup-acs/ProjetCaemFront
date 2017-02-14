@@ -1,0 +1,35 @@
+//IN THIS FILE YOU CAN CHANGE COLORS AND FONT STYLE OF THE WHOLE WEBSITE
+
+
+
+/*=================*/
+/*COLOR VARIABLES :*/
+/*=================*/
+
+//global colors:
+$caemDark: #1a1a1a;
+$caemGrey: #999999;
+$caemOrange: #fc9633;
+$caemBlue: #35a1e6;
+$caemPink: #e83377;
+$caemGreen: #4dd433;
+$caemAlert: #db0010;
+$caemWhite: #ffffff;
+
+//header / footer main color :
+$headerFooterMainColor: $caemDark;
+
+//header / footer border color:
+$headerFooterBorderColor: $caemOrange;
+
+
+
+/*=================*/
+/*FONTS VARIABLES :*/
+/*=================*/
+
+//footer fonts settings :
+$footerFontType: Quicksand; /*Quicksand available*/
+$footerFontWeight: 400; /*300, 400 or 700 availables*/
+$footerFontSize: 1.1em;
+$footerFontColor: $caemWhite; /*check for global colors above or create your own*/
