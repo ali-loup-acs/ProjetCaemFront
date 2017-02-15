@@ -22,6 +22,7 @@ $headerFooterMainColor: $caemDark;
 //header / footer border color:
 $headerFooterBorderColor: $caemOrange;
 
+//main /
 
 
 /*=================*/
@@ -33,3 +34,29 @@ $footerFontType: Quicksand; /*Quicksand available*/
 $footerFontWeight: 400; /*300, 400 or 700 availables*/
 $footerFontSize: 1.1em;
 $footerFontColor: $caemWhite; /*check for global colors above or create your own*/
+
+// main fonts settings:
+
+/*presentation*/
+//title
+$mainTitleType: Quicksand;
+$mainTitleWeight: 700;
+$mainTitleSize: 1.9em;
+$mainTitleColor: $caemDark;
+//items presentation
+$mainItemsType: Quicksand;
+$mainItemsWeight: 300;
+$mainItemsSize: 1.5em;
+$mainItemsColor: $caemDark;
+//button symbol
+$mainButtonSymbol: "\25B8";
+/*presentation*/
+/*news*/
+$mainNewsHeaderColor: $caemOrange;
+$mainNewsShadow: 0px 0px 7px 1px rgba(51,51,51,0.2);
+$mainNewsPadding: 0 1.3em;
+$mainNewsImgPadding: 1.3em 1.5em;
+// $mainNewsImgSizeHeight: 10vh;
+// $mainNewsImgSizeWidth: ;
+
+/*news*/
