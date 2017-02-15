@@ -1,173 +1,38 @@
-@charset "UTF-8";
-/*=================*/
-/*COLOR VARIABLES :*/
-/*=================*/
-/*=================*/
-/*FONTS VARIABLES :*/
-/*=================*/
-/*Quicksand available*/
-/*300, 400 or 700 availables*/
-/*check for global colors above or create your own*/
-/*presentation*/
-/*presentation*/
-/*news*/
-/*news*/
-/*=================*/
-/*COLOR VARIABLES :*/
-/*=================*/
-/*=================*/
-/*FONTS VARIABLES :*/
-/*=================*/
-/*Quicksand available*/
-/*300, 400 or 700 availables*/
-/*check for global colors above or create your own*/
-/*presentation*/
-/*presentation*/
-/*news*/
-/*news*/
-.footerFont, footer, footer nav a {
-  font-family: Quicksand;
-  font-weight: 400;
-  font-size: 1.1em;
-  color: #ffffff;
-}
+/*
+Error: Invalid CSS after "...cd024f12d6eebe6": expected "{", was ""
+        on line 650 of assets/css/style.scss
 
-.mainTitleFont, main header h2, main section header p, main section article figure figcaption h2 {
-  font-family: Quicksand;
-  font-weight: 700;
-  font-size: 1.9em;
-  color: #1a1a1a;
-}
+645: 	}
+646: }
+647:
+648:
+649: >>>>>>> 09c78066ccfe56fc9aa73f3a1cd024f12d6eebe6
 
-.mainItemsFont, main header p, main header a, main section article figure figcaption time, main section article p, main section article a {
-  font-family: Quicksand;
-  font-weight: 300;
-  font-size: 1.5em;
-  color: #1a1a1a;
-}
-
-.borderLeftBlue {
-  border-left: #35a1e6 solid 0.5rem;
-}
-
-.borderLeftPink {
-  border-left: #e83377 solid 0.5rem;
-}
-
-.borderLeftOrange {
-  border-left: #fc9633 solid 0.5rem;
-}
-
-.borderLeftGreen {
-  border-left: #4dd433 solid 0.5rem;
-}
-
-.button, main header a, main section article a {
-  display: inline-block;
-  color: #ffffff;
-  background-color: #35a1e6;
-  padding: 1rem 2.3rem;
-  letter-spacing: 0.2rem;
-  font-weight: 400;
-}
-
-.shadow, main section article .new {
-  -webkit-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.2);
-  -moz-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.2);
-  box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.2);
-}
-
-.paddingNews, main section article figure figcaption, main section article p, main section article a {
-  padding: 0 1.3em;
-}
-
-body {
-  font-family: QuickSand;
-}
-
-main header p {
-  padding-left: 0.7em;
-}
-main header a::after {
-  content: "▸";
-  padding-left: 3.3rem;
-}
-main section {
-  padding: 2em 0;
-}
-main section header {
-  background-color: #fc9633;
-}
-main section header p {
-  color: #ffffff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-main section article .new {
-  padding-bottom: 1em;
-}
-main section article figure figcaption {
-  background-image: url("../img/trame_footer.png");
-  padding-bottom: 1em;
-}
-main section article figure figcaption h2 {
-  padding-top: 0.5em;
-}
-main section article figure img {
-  padding: 1.3em 1.5em;
-}
-main section article p {
-  overflow: hidden;
-  max-height: 10vh;
-}
-
-#bgImage {
-  background-color: #1a1a1a;
-  background-image: url(../img/trame_footer.png);
-  border-top: 1.5vh solid #fc9633;
-}
-
-footer {
-  padding-top: 2vh;
-}
-footer .caemSection address {
-  padding-top: 4vh;
-}
-footer .caemSection address .caemInfos {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-footer .caemSection .socialNetwork {
-  font-size: 1.1em;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  padding-top: 4vh;
-}
-footer nav {
-  border-bottom: 1px solid #ffffff;
-  padding: 5vh 0vh 2vh 0vh;
-  opacity: 0.5;
-}
-footer nav a:hover {
-  color: #ffffff;
-}
-footer .banner div {
-  padding: 2vh 0vh 2vh 0vh;
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  footer nav li {
-    padding-bottom: 3vh;
-  }
-
-  footer nav {
-    padding: 8vh 0vh 5vh 0vh;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+assets/css/style.scss:650
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/home/okma/.rvm/gems/ruby-2.3.3/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/home/okma/.rvm/gems/ruby-2.3.3/bin/sass:22:in `load'
+/home/okma/.rvm/gems/ruby-2.3.3/bin/sass:22:in `<main>'
+/home/okma/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `eval'
+/home/okma/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...cd024f12d6eebe6\": expected \"{\", was \"\"\A         on line 650 of assets/css/style.scss\A \A 645: 	}\A 646: }\A 647: \A 648: \A 649: >>>>>>> 09c78066ccfe56fc9aa73f3a1cd024f12d6eebe6"; }
