@@ -134,16 +134,14 @@ main{
 
 		header {
 			background-color: $mainNewsHeaderColor;
-			p{
+			h2{
 				@extend .mainTitleFont;
 				color: $caemWhite;
-				padding-top: 0.5rem;
-				padding-bottom: 0.5rem;
+				padding: 0.3em 0.8em;
 			}
 		}
 
 		article{
-			// height: 50vh;
 			.new{
 				@extend .shadow;
 				padding-bottom: 1em;
@@ -164,14 +162,15 @@ main{
 
 				img{
 					padding: $mainNewsImgPadding;
-					// max-height: $mainNewsImgSizeHeight;
+					max-height: $mainNewsImgSizeHeight;
+					max-width: mainNewsImgSizeWidth;
 				}
 			}
 			p{
 				@extend .mainItemsFont;
 				@extend .paddingNews;
 				overflow: hidden;
-				max-height: 10vh;
+				max-height: 3em;
 			}
 
 			a{
@@ -183,6 +182,7 @@ main{
 		}
 	}
 }
+
 
 .mainParcoursMusical{
 
