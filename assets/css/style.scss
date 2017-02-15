@@ -5,8 +5,17 @@
 
 /*EXTENDS:*/
 .footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
+
 .mainTitleFont{@include font($mainTitleType, $mainTitleWeight, $mainTitleSize, $mainTitleColor);}
-.mainItemsFont{@include font($mainItemsType, $mainItemsWeight, $mainItemsSize, $mainItemsColor);}
+
+.mainSubtitleFont{@include font($mainSubtitleType, $mainSubtitleWeight, $mainSubtitleSize, $mainSubtitleColor)}
+
+.mainFont{@include font($mainFontType, $mainFontWeight, $mainFontSize, $mainFontColor);}
+
+.lightFont{@include font($lightFontType, $lightFontWeight, $lightFontSize, $lightFontColor);}
+
+
+
 .borderLeftBlue{@include borderLeft($caemBlue);}
 .borderLeftPink{@include borderLeft($caemPink);}
 .borderLeftOrange{@include borderLeft($caemOrange);}
@@ -14,6 +23,7 @@
 .button{@include button($caemWhite,$caemBlue);}
 .shadow{@include shadow($mainNewsShadow);}
 .paddingNews{@include padding($mainNewsPadding);}
+
 /*========*/
 
 
@@ -115,14 +125,14 @@ header{
 	 	h2{ @extend .mainTitleFont;}
 
 		p{
-			@extend .mainItemsFont;
+			@extend .mainFont;
 			padding-left: 0.7em;
 			// line-height: 1.75em; //need ot choose
 		}
 
 		a{
 			@extend .button;
-			@extend .mainItemsFont;
+			@extend .mainFont;
 		}
 		a::after{
 			content: $mainButtonSymbol;
@@ -159,7 +169,7 @@ header{
 						padding-top: 0.5em;
 					}
 					time{
-						@extend .mainItemsFont;
+						@extend .mainFont;
 					}
 				}
 
@@ -169,7 +179,7 @@ header{
 				}
 			}
 			p{
-				@extend .mainItemsFont;
+				@extend .mainFont;
 				@extend .paddingNews;
 				overflow: hidden;
 				max-height: 10vh;
@@ -178,7 +188,7 @@ header{
 			a{
 				@extend .button;
 				@extend .paddingNews;
-				@extend .mainItemsFont;
+				@extend .mainFont;
 
 			}
 		}
@@ -214,7 +224,7 @@ header{
 		padding: 2vh;
 		border-right: 1px solid #f2f2f2;
 		background-color: $caemWhite;
-		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.075);
+
 
 		section
 		{
@@ -222,24 +232,21 @@ header{
 			padding:0;
 			margin-bottom: 3vh;
 
-			h2 //gérer la font en mixin
+			h2
 			{
+				@extend .mainSubtitleFont;
 				margin:0;
 				padding:0;
 				padding: 2vh 0vh 2vh 0vh;
-				font-weight: 700;
-				font-size: 1.2em;
 				text-align: center;
 			}
 
 			h3
 			{
+				@extend .lightFont;
 				margin:0;
 				padding:0;
 				padding: 1vh 0vh 1.5vh 0vh;
-				font-weight: 300;
-				font-size: 1.3em;
-
 			}
 
 			label
@@ -255,7 +262,7 @@ header{
 					margin:0;
 					padding:0;
 					margin-left: 1vw;
-					font-weight: 400;
+					@extend .mainFont;
 				}
 
 				input
@@ -274,16 +281,72 @@ header{
 		padding: 0;
 		padding: 2vh;
 
+		*{
+			margin:0;
+			padding:0;
+		}
+
 		section
 		{
-			margin: 0;
-			padding:0;
 			margin-bottom: 2vh;
+			background-color: $caemWhite;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
 
-			height: 40vh;
-			background-color: lightgrey;
+			header
+			{
+				background-color: $caemBlue;
+				padding: 1vh 0vh 1vh 0vh;
+
+				h3
+				{
+					@extend .mainTitleFont;
+					padding: 0vh 2vh 0vh 2vh;
+
+				}
+			}
+
+			main
+			{
+				padding:2vh;
+				@extend .mainFont;
+			}
+
+			footer
+			{
 
 
+				div
+				{
+					text-align: center;
+
+					h4
+					{
+						@extend .mainSubtitleFont;
+						padding: 1vh 0vh 1vh 0vh;
+
+					}
+
+					p
+					{
+
+						@extend .lightFont;
+						padding: 1vh 0vh 1vh 0vh;
+					}
+				}
+			}
+
+			figure
+			{
+				padding: 1vh 1vh 1vh 1vh;
+
+
+				div
+				{
+					margin:0;
+					padding:0;
+					padding: 1vh 1vh 1vh 1vh;
+				}
+			}
 		}
 
 	}

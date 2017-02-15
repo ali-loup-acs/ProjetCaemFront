@@ -37,17 +37,40 @@ $footerFontColor: $caemWhite; /*check for global colors above or create your own
 
 // main fonts settings:
 
+
+
+
+
+
 /*presentation*/
-//title
+
+//title font:
 $mainTitleType: Quicksand;
 $mainTitleWeight: 700;
-$mainTitleSize: 1.9em;
+$mainTitleSize: 1.5em;
 $mainTitleColor: $caemDark;
-//items presentation
-$mainItemsType: Quicksand;
-$mainItemsWeight: 300;
-$mainItemsSize: 1.5em;
-$mainItemsColor: $caemDark;
+
+//subtitle font:
+$mainSubtitleType: Quicksand;
+$mainSubtitleWeight: 700;
+$mainSubtitleSize: 1.2em;
+$mainSubtitleColor: $caemDark;
+
+//main font:
+$mainFontType: Quicksand;
+$mainFontWeight: 400;
+$mainFontSize: 1em;
+$mainFontColor: $caemDark;
+
+//light font:
+$lightFontType: Quicksand;
+$lightFontWeight: 300;
+$lightFontSize: 1.7rem;
+$lightFontColor: $caemDark;
+
+
+
+
 //button symbol
 $mainButtonSymbol: "\25B8";
 /*presentation*/
