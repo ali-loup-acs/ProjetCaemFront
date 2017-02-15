@@ -23,7 +23,7 @@ module.exports = function(grunt) {
              style: 'expanded'
           },
           files: {
-            'assets/css/style.css': 'assets/css/*.scss',
+            'assets/css/style.css' : 'assets/css/style.scss',
           }
         }
       },
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
           files: 'assets/css/*.scss',
           tasks: ['sass'],
           options: {
-          // livereload: true,
+            livereload: true,
           },
         },
       },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
                 port:3000,
                 hostname:'localhost',
                 bases:['./','template'],
-                livereload:true,
+                // livereload:true,
             }
         }
       }
@@ -69,6 +69,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-express'); // mini serveur pour voir nos pages
 
     // quand on lance la commande "grunt server" : lance le serveur express et lance watch
-    grunt.registerTask('server', ['express:all','watch']);
+    grunt.registerTask('server', ['express:all','watch','sass']);
 
 };

@@ -9,6 +9,10 @@
 /*Quicksand available*/
 /*300, 400 or 700 availables*/
 /*check for global colors above or create your own*/
+/*presentation*/
+/*presentation*/
+/*news*/
+/*news*/
 /*=================*/
 /*COLOR VARIABLES :*/
 /*=================*/
@@ -20,6 +24,10 @@
 /*Quicksand available*/
 /*300, 400 or 700 availables*/
 /*check for global colors above or create your own*/
+/*presentation*/
+/*presentation*/
+/*news*/
+/*news*/
 /*EXTENDS:*/
 /* line 7, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 .footerFont, footer, footer nav a {
@@ -28,13 +36,62 @@
   font-size: 1.1em;
   color: #ffffff; }
 
-/*========*/
+/* line 8, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.mainTitleFont {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 1.9em;
+  color: #1a1a1a; }
+
+/* line 9, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.mainItemsFont {
+  font-family: Quicksand;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #1a1a1a; }
+
+/* line 10, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.borderLeftBlue {
+  border-left: #35a1e6 solid 0.5rem; }
+
+/* line 11, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.borderLeftPink {
+  border-left: #e83377 solid 0.5rem; }
+
 /* line 12, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.borderLeftOrange {
+  border-left: #fc9633 solid 0.5rem; }
+
+/* line 13, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.borderLeftGreen {
+  border-left: #4dd433 solid 0.5rem; }
+
+/* line 14, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #35a1e6;
+  padding: 1rem 2.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400; }
+
+/* line 15, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.shadow {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.2);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 0px 7px 1px rgba(51, 51, 51, 0.2); }
+
+/* line 16, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+.paddingNews {
+  padding: 0 1.3em; }
+
+/*========*/
+/* line 22, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 body {
   font-family: QuickSand; }
 
 /* ---------------- HEADER ---------------- */
-/* line 24, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 34, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header #contact-connection {
   background-color: #1A1A1A;
   color: white;
@@ -43,16 +100,16 @@ header #contact-connection {
   border-top: #FC9633 solid 1.3vh;
   font-size: 2.5vh; }
 
-/* line 34, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 44, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header #contact-connection img {
   width: 3%;
   margin: 0.4vw; }
 
-/* line 39, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 49, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header #logo-mobile {
   display: none; }
 
-/* line 43, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 53, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header #header {
   display: flex;
   align-items: center;
@@ -60,26 +117,26 @@ header #header {
   background: url("../img/header.png");
   background-size: cover; }
 
-/* line 51, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 61, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header #header img {
   width: 330px; }
 
-/* line 55, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 65, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header nav {
   background-color: #1A1A1A;
   display: flex;
   justify-content: center;
   border-bottom: #FC9633 solid 1.3vh; }
 
-/* line 63, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 73, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header nav ul {
   height: 8vh; }
 
-/* line 68, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 78, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header nav li {
   display: inline; }
 
-/* line 73, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 83, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header li a {
   height: 9vh;
   display: inline-flex;
@@ -90,13 +147,13 @@ header li a {
   color: white;
   font-size: 3vh; }
 
-/* line 84, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 94, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header li a:hover {
   background: #333333;
   text-decoration: none;
   color: white; }
 
-/* line 90, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 100, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 header ul.menu li.icon {
   display: none; }
 
@@ -106,57 +163,79 @@ header ul.menu li.icon {
 
 	header{
 
-		h2{
-			font-weight: bold;
-		}
+	 	h2{ @extend .mainTitleFont;}
 
 		p{
+			@extend .mainItemsFont;
 			padding-left: 0.7em;
-			line-height: 1.75em;
-			font-size: 2em;
+			// line-height: 1.75em; //need ot choose
 		}
 
 		a{
-			display: inline-block;
-			color: white;
-			background-color: $caemBlue;
-			font-size: 2.6rem;
-			padding: 1rem 2.3rem;
-			letter-spacing: 0.2rem;
+			@extend .button;
+			@extend .mainItemsFont;
 		}
 		a::after{
-			content: "\25B8";
+			content: $mainButtonSymbol;
 			padding-left: 3.3rem;
 		}
 	}
 
 	section{
-		margin: 2em 0;
+		padding: 2em 0;
 
-		header{
-			background-color: $caemOrange;
-			color: white;
-			font-weight: bold;
+		header {
+			background-color: $mainNewsHeaderColor;
+			p{
+				@extend .mainTitleFont;
+				color: $caemWhite;
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+			}
 		}
 
 		article{
-		margin: 1.7em 0;
-		-webkit-box-shadow: 0px 0px 7px 1px rgba(51,51,51,0.3);
-		-moz-box-shadow: 0px 0px 7px 1px rgba(51,51,51,0.3);
-		box-shadow: 0px 0px 7px 1px rgba(51,51,51,0.1);
-
+			// height: 50vh;
+			.new{
+				@extend .shadow;
+				padding-bottom: 1em;
+			}
 			figure{
 				figcaption{
+					@extend .paddingNews;
 					background-image: url('../img/trame_footer.png');
-
+					padding-bottom: 1em;
 					h2{
-						font-weight: bold;
+						@extend .mainTitleFont;
+						padding-top: 0.5em;
+					}
+					time{
+						@extend .mainItemsFont;
 					}
 				}
+
+				img{
+					padding: $mainNewsImgPadding;
+					// max-height: $mainNewsImgSizeHeight;
+				}
+			}
+			p{
+				@extend .mainItemsFont;
+				@extend .paddingNews;
+				overflow: hidden;
+				max-height: 10vh;
+			}
+
+			a{
+				@extend .button;
+				@extend .paddingNews;
+				@extend .mainItemsFont;
+
 			}
 		}
 	}
 }
+
 
 .blue{
 	border-left: $caemBlue solid 0.65rem;
@@ -172,7 +251,7 @@ header ul.menu li.icon {
 }*/
 /* ---------------- ACCUEIL PAGE END ---------------- */
 /* ---------------- PAGE PARCOURS MUSICAL ---------------- */
-/* line 178, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 210, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 .mainParcoursMusical aside {
   margin: 0;
   padding: 0;
@@ -180,12 +259,12 @@ header ul.menu li.icon {
   border-right: 1px solid #f2f2f2;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075); }
-  /* line 187, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 219, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   .mainParcoursMusical aside section {
     margin: 0;
     padding: 0;
     margin-bottom: 3vh; }
-    /* line 193, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 225, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     .mainParcoursMusical aside section h2 {
       margin: 0;
       padding: 0;
@@ -193,39 +272,39 @@ header ul.menu li.icon {
       font-weight: 700;
       font-size: 1.2em;
       text-align: center; }
-    /* line 203, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 235, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     .mainParcoursMusical aside section h3 {
       margin: 0;
       padding: 0;
       padding: 1vh 0vh 1.5vh 0vh;
       font-weight: 300;
       font-size: 1.3em; }
-    /* line 213, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 245, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     .mainParcoursMusical aside section label {
       background-color: #f2f2f2;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1vh 0vh 1vh 0vh; }
-      /* line 221, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+      /* line 253, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
       .mainParcoursMusical aside section label p {
         margin: 0;
         padding: 0;
         margin-left: 1vw;
         font-weight: 400; }
-      /* line 229, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+      /* line 261, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
       .mainParcoursMusical aside section label input {
         margin: 0;
         padding: 0;
         margin-right: 1vw; }
 
-/* line 239, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 271, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 .mainParcoursMusical div {
   margin: 0;
   padding: 0;
   border: 1px solid green;
   padding: 2vh; }
-  /* line 246, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 278, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   .mainParcoursMusical div section {
     margin: 0;
     padding: 0;
@@ -235,40 +314,40 @@ header ul.menu li.icon {
 
 /* ---------------- PAGE PARCOURS MUSICAL END ---------------- */
 /* ---------------- FOOTER ---------------- */
-/* line 268, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 300, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 #bgImage {
   background-color: #1a1a1a;
   background-image: url(../img/trame_footer.png);
   border-top: 1.5vh solid #fc9633; }
 
-/* line 274, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+/* line 306, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
 footer {
   padding-top: 2vh; }
-  /* line 282, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 314, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .caemSection address {
     padding-top: 4vh; }
-    /* line 286, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 318, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     footer .caemSection address .caemInfos {
       padding: 0;
       margin: 0;
       display: flex;
       align-items: center; }
-  /* line 295, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 327, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .caemSection .socialNetwork {
     font-size: 1.1em;
     display: flex;
     flex-flow: column;
     align-items: center;
     padding-top: 4vh; }
-  /* line 307, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 339, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav {
     border-bottom: 1px solid #ffffff;
     padding: 5vh 0vh 2vh 0vh;
     opacity: 0.5; }
-    /* line 318, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+    /* line 350, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
     footer nav a:hover {
       color: #ffffff; }
-  /* line 324, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 356, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer .banner div {
     padding: 2vh 0vh 2vh 0vh;
     display: flex;
@@ -278,219 +357,219 @@ footer {
 /* ------------ MEDIA QUERIES ------------ */
 /* ------------ HEADER MEDIA QUERIES ------------ */
 @media screen and (max-width: 1800px) {
-  /* line 343, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 375, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     height: 9.2vh; }
-  /* line 347, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 379, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #connection {
     margin-left: -3vw; } }
 
 @media screen and (max-width: 1650px) {
-  /* line 353, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 385, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     padding-left: 2vw;
     padding-right: 2vw; }
-  /* line 358, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 390, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #connection {
     margin-left: -5vw; } }
 
 @media screen and (max-width: 1400px) {
-  /* line 364, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 396, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     height: 9vh;
     padding-left: 1vh;
     padding-right: 1vh; } }
 
 @media screen and (max-device-width: 1400px) {
-  /* line 372, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 404, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     height: 9.4vh; } }
 
 @media screen and (max-width: 1250px) {
-  /* line 378, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 410, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   nav ul {
     margin-left: -5vw; }
-  /* line 382, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 414, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     font-size: 2.8vh; } }
 
 @media screen and (max-device-width: 1024px) {
-  /* line 389, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 421, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   nav {
     display: block;
     border: none; }
-  /* line 394, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 426, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #logo-desktop {
     display: none; }
-  /* line 398, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 430, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #logo-mobile {
     display: inline; }
-  /* line 402, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 434, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #logo-mobile img {
     width: 5vw;
     margin-top: 1vh;
     margin-bottom: 1vh; }
-  /* line 408, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 440, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #connection {
     margin-left: 40vw;
     font-size: 3vh; }
-  /* line 413, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 445, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #header img {
     width: 250px; }
-  /* line 417, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 449, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   .menu li a {
     font-size: 30px;
     margin-top: 1vh; }
-  /* line 423, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 455, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu {
     margin: 0;
     padding: 0;
     overflow: hidden;
     height: 9vh; }
-  /* line 430, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 462, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu li:not(:first-child) {
     display: none; }
-  /* line 434, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 466, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu li.icon {
     float: right;
     display: inline-block; }
-  /* line 439, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 471, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   .icon a:hover {
     background: none; }
-  /* line 444, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 476, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive {
     position: relative;
     height: 40vh; }
-  /* line 449, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 481, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li.icon {
     margin-top: 1vh;
     position: absolute;
     right: 0;
     top: 0; }
-  /* line 456, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 488, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li {
     display: flex;
     align-items: center;
     margin-top: 1vh;
     margin-bottom: -2vh; }
-  /* line 463, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 495, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li a {
     display: block;
     text-align: left; }
-  /* line 469, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 501, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     height: 7vh; } }
 
 @media screen and (max-width: 980px) {
-  /* line 475, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 507, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     font-size: 2.5vh; } }
 
 @media screen and (max-width: 890px) {
-  /* line 481, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 513, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     font-size: 2.3vh; } }
 
 @media screen and (max-width: 820px) {
-  /* line 487, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 519, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     font-size: 2.1vh;
     padding-left: 1vh;
     padding-right: 1vh; } }
 
 @media screen and (max-device-width: 800px) {
-  /* line 495, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 527, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li {
     margin-top: 1.5vh;
     margin-bottom: -2vh; }
-  /* line 500, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 532, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li.icon {
     margin-top: 1.5vh; } }
 
 @media screen and (max-width: 770px) {
-  /* line 506, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 538, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     font-size: 1.8vh; } }
 
 @media screen and (max-width: 680px) {
-  /* line 512, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 544, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   li a {
     padding-left: 0.5;
     padding-right: 0.5; } }
 
 @media screen and (max-device-width: 650px) {
-  /* line 520, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 552, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #header img {
     width: 120px; }
-  /* line 524, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 556, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   .menu li a {
     font-size: 20px;
     margin-top: 4vh; }
-  /* line 529, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 561, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #logo-mobile img {
     width: 6vw; }
-  /* line 533, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 565, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #connection {
     margin-left: 50vw;
     font-size: 5vh; }
-  /* line 538, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 570, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu {
     height: 15vh; }
-  /* line 542, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 574, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive {
     height: 58vh; }
-  /* line 546, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 578, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li {
     margin-top: -0.5vh;
     margin-bottom: -0.5vh; }
-  /* line 551, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 583, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li.icon {
     margin-top: -0.3vh; } }
 
 @media screen and (max-device-width: 450px) {
-  /* line 558, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 590, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #header img {
     width: 150px; }
-  /* line 562, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 594, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   .menu li a {
     font-size: 20px;
     margin-top: 0vh; }
-  /* line 567, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 599, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #logo-mobile img {
     width: 8vw; }
-  /* line 571, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 603, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   #connection {
     margin-left: 20vw;
     font-size: 3vh; }
-  /* line 576, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 608, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu {
     height: 8vh; }
-  /* line 580, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 612, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive {
     height: 35vh; }
-  /* line 584, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 616, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li {
     margin-top: 1.7vh;
     margin-bottom: -2vh; }
-  /* line 589, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 621, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li.icon {
     margin-top: 1.7vh; } }
 
 @media screen and (max-device-width: 360px) {
-  /* line 595, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 627, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li {
     margin-top: 1.3vh;
     margin-bottom: -2vh; }
-  /* line 600, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 632, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   ul.menu.responsive li.icon {
     margin-top: 1.3vh; } }
 
 /* ------------ FOOTER MEDIA QUERIES ------------ */
 @media screen and (max-width: 768px) {
-  /* line 609, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 641, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav li {
     padding-bottom: 3vh; }
-  /* line 614, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
+  /* line 646, C:/wamp64/www/ProjetCaemFront/assets/css/style.scss */
   footer nav {
     padding: 8vh 0vh 5vh 0vh; } }
 
