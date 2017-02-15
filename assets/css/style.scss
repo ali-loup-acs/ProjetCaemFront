@@ -1,14 +1,107 @@
-@import 'varstyle';
+//TO EASILY CHANGE THE STYLE OF THE WEBSITE, GO TO _configstyle.scss FILE
+@import 'configstyle';
+@import 'mixinstyle';
 
-
-#bgImage{
-	background-color: $caemUIDark;
-	background-image: url(../img/trame_footer.png);
-	border-top: 1.5vh solid $caemOrange;
-}
-
+//EXTENDS:
 
 .footerFont{@include font($footerFontType, $footerFontWeight, $footerFontSize, $footerFontColor);}
+
+.mainTitleFont{@include font($mainTitleType, $mainTitleWeight, $mainTitleSize, $mainTitleColor);}
+.mainItemsFont{@include font($mainItemsType, $mainItemsWeight, $mainItemsSize, $mainItemsColor);}
+.borderLeftBlue{@include borderLeft($caemBlue);}
+.borderLeftPink{@include borderLeft($caemPink);}
+.borderLeftOrange{@include borderLeft($caemOrange);}
+.borderLeftGreen{@include borderLeft($caemGreen);}
+.button{@include button($caemWhite,$caemBlue);}
+.shadow{@include shadow($mainNewsShadow);}
+.paddingNews{@include padding($mainNewsPadding);}
+
+body{
+	font-family: QuickSand;
+}
+
+main{
+
+	header{
+
+	 	h2{ @extend .mainTitleFont;}
+
+		p{
+			@extend .mainItemsFont;
+			padding-left: 0.7em;
+			// line-height: 1.75em; //need ot choose
+		}
+
+		a{
+			@extend .button;
+			@extend .mainItemsFont;
+		}
+		a::after{
+			content: $mainButtonSymbol;
+			padding-left: 3.3rem;
+		}
+	}
+
+	section{
+		padding: 2em 0;
+
+		header {
+			background-color: $mainNewsHeaderColor;
+			p{
+				@extend .mainTitleFont;
+				color: $caemWhite;
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+			}
+		}
+
+		article{
+			// height: 50vh;
+			.new{
+				@extend .shadow;
+				padding-bottom: 1em;
+			}
+			figure{
+				figcaption{
+					@extend .paddingNews;
+					background-image: url('../img/trame_footer.png');
+					padding-bottom: 1em;
+					h2{
+						@extend .mainTitleFont;
+						padding-top: 0.5em;
+					}
+					time{
+						@extend .mainItemsFont;
+					}
+				}
+
+				img{
+					padding: $mainNewsImgPadding;
+					// max-height: $mainNewsImgSizeHeight;
+				}
+			}
+			p{
+				@extend .mainItemsFont;
+				@extend .paddingNews;
+				overflow: hidden;
+				max-height: 10vh;
+			}
+
+			a{
+				@extend .button;
+				@extend .paddingNews;
+				@extend .mainItemsFont;
+
+			}
+		}
+	}
+}
+
+#bgImage{
+	background-color: $headerFooterMainColor;
+	background-image: url(../img/trame_footer.png);
+	border-top: 1.5vh solid $headerFooterBorderColor;
+}
 
 
 footer
@@ -25,6 +118,8 @@ footer
 
 			.caemInfos
 			{
+				padding: 0;
+				margin: 0;
 				display: flex;
 				align-items: center;
 			}
@@ -44,86 +139,27 @@ footer
 
 	nav
 	{
-		padding: 3vh 0vh 1vh 0vh;
 		border-bottom: 1px solid $caemWhite;
+		padding: 5vh 0vh 2vh 0vh;
 		opacity: 0.5;
 
 		a
 		{
 			@extend .footerFont;
 		}
+
+		a:hover
+		{
+			color: $caemWhite;
+		}
 	}
 
 	.banner div
 	{
+		padding: 2vh 0vh 2vh 0vh;
 		display: flex;
 		justify-content: center;
 	}
 }
-body{
-	font-family: QuickSand;
-}
-main{
 
-	header{
-
-	 	h2{
-			font-weight: bold;
-		}
-
-		p{
-			padding-left: 0.7em;
-			line-height: 1.75em;
-			font-size: 2em;
-		}
-
-		a{
-			display: inline-block;
-			color: white;
-			background-color: $caemBlue;
-			font-size: 2.6rem;
-			padding: 1rem 2.3rem;
-			letter-spacing: 0.2rem;
-		}
-		a::after{
-			content: "\25B8";
-			padding-left: 3.3rem;
-		}
-	}
-
-	section{
-		margin: 2em 0;
-
-		header{
-			background-color: $caemOrange;
-			color: white;
-			font-weight: bold;
-		}
-
-		article{
-		margin: 1.7em 0;
-		-webkit-box-shadow: 0px 0px 7px 1px rgba(51,51,51,0.3);
-		-moz-box-shadow: 0px 0px 7px 1px rgba(51,51,51,0.3);
-		box-shadow: 0px 0px 7px 1px rgba(51,51,51,0.1);
-			figure{
-
-				figcaption{
-					background-image: url('../img/trame_footer.png');
-				}
-			}
-		}
-	}
-}
-
-.blue{
-	border-left: $caemBlue solid 0.65rem;
-}
-.green{
-	border-left: $caemGreen solid 0.65rem;
-}
-.pink{
-	border-left: $caemPink solid 0.65rem;
-}
-.orange{
-	border-left: $caemOrange solid 0.65rem;
-}
+@media screen and (max-width: 768px){footer nav li{padding-bottom: 3vh;} footer nav{padding: 8vh 0vh 5vh 0vh;}}

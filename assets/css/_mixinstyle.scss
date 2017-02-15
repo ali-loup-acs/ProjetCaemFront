@@ -1,0 +1,37 @@
+//TO EASILY CHANGE THE STYLE OF THE WEBSITE, GO TO _configstyle.scss FILE
+@import 'configstyle';
+
+//FONTS MIXINS :
+
+//This mixin is used in the SCSS file in order to change the type of an element easily
+@mixin font($fontType, $fontWeight, $fontSize, $fontColor)
+	{
+		font-family: $fontType;
+		font-weight: $fontWeight;
+		font-size: $fontSize;
+		color: $fontColor;
+	}
+
+@mixin borderLeft($caemColor)
+	{
+		border-left: $caemColor solid 0.5rem;
+	}
+
+@mixin button($colorFont,$colorBackground){
+	display: inline-block;
+	color: $colorFont;
+	background-color: $colorBackground;
+	padding: 1rem 2.3rem;
+	letter-spacing: 0.2rem;
+	font-weight: 400;
+}
+
+@mixin shadow($shadow){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+@mixin padding($padding){
+	padding: $padding;
+}
