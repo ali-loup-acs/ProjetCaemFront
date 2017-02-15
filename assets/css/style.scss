@@ -97,8 +97,8 @@ header{
 
 
 
-
-main{
+/* ---------------- ACCUEIL PAGE ---------------- */
+/*main{
 
 	header{
 
@@ -165,8 +165,8 @@ main{
 }
 .orange{
 	border-left: $caemOrange solid 0.65rem;
-}
-
+}*/
+/* ---------------- ACCUEIL PAGE END ---------------- */
 
 
 
@@ -236,10 +236,24 @@ main{
 		}
 	}
 
-	article
+	div
 	{
 		margin: 0;
 		padding: 0;
+		border: 1px solid green;
+		padding: 2vh;
+
+		section
+		{
+			margin: 0;
+			padding:0;
+			margin-bottom: 2vh;
+
+			height: 40vh;
+			background-color: lightgrey;
+
+
+		}
 
 	}
 }
