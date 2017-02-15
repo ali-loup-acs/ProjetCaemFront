@@ -211,10 +211,20 @@
 
 
 
-  <script src="//localhost:35729/livereload.js"></script>
 
 
 
+	<script src="//localhost:35729/livereload.js"></script>
+	<script>
+		function myBurger() {
+			var x = document.getElementById("myMenu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			} else {
+				x.className = "menu";
+			}
+		}
+	</script>
 
   </body>
 
